@@ -8,9 +8,10 @@
 import UIKit
 
 class WeatherListCell: UITableViewCell {
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-
-
+        
+        
+    }
 }

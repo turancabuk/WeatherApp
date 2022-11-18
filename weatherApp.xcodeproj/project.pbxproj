@@ -17,6 +17,7 @@
 		5C12C92C2926AF7F002005E2 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12C92B2926AF7F002005E2 /* MainModel.swift */; };
 		5C12C92E2926B288002005E2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12C92D2926B288002005E2 /* Extensions.swift */; };
 		5C12C93429281105002005E2 /* WeatherListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12C93329281105002005E2 /* WeatherListCell.swift */; };
+		5C12C93629281316002005E2 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12C93529281316002005E2 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5C12C92B2926AF7F002005E2 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		5C12C92D2926B288002005E2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5C12C93329281105002005E2 /* WeatherListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListCell.swift; sourceTree = "<group>"; };
+		5C12C93529281316002005E2 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		5C12C9222926ABAE002005E2 /* Webservice */ = {
 			isa = PBXGroup;
 			children = (
+				5C12C93529281316002005E2 /* Webservice.swift */,
 			);
 			path = Webservice;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				5C12C9102926AB7D002005E2 /* MainViewController.swift in Sources */,
 				5C12C92E2926B288002005E2 /* Extensions.swift in Sources */,
+				5C12C93629281316002005E2 /* Webservice.swift in Sources */,
 				5C12C90C2926AB7D002005E2 /* AppDelegate.swift in Sources */,
 				5C12C90E2926AB7D002005E2 /* SceneDelegate.swift in Sources */,
 				5C12C92C2926AF7F002005E2 /* MainModel.swift in Sources */,

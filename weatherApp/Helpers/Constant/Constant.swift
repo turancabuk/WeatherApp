@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Constant {
-    
+class WeatherByCity {
+
     static func urlForWeather(city: String) -> URL {
         var baseUrl: String {
             "https://api.openweathermap.org/data/2.5/weather?q="
@@ -17,9 +17,11 @@ struct Constant {
             "&appid=c7e855dea4a4c52c2f1d97501e6be4fb"
         }
         
+        
+  
         return URL(string:
                     "\(baseUrl)\(city.escaped())\(APIKey)")!
+        
+        
     }
 }
-
-
