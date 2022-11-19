@@ -18,6 +18,7 @@
 		5C12C92E2926B288002005E2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12C92D2926B288002005E2 /* Extensions.swift */; };
 		5C12C93429281105002005E2 /* WeatherListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12C93329281105002005E2 /* WeatherListCell.swift */; };
 		5C12C93629281316002005E2 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12C93529281316002005E2 /* Webservice.swift */; };
+		5C12C9382928273E002005E2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12C9372928273E002005E2 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5C12C92D2926B288002005E2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5C12C93329281105002005E2 /* WeatherListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListCell.swift; sourceTree = "<group>"; };
 		5C12C93529281316002005E2 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		5C12C9372928273E002005E2 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		5C12C9242926ABC9002005E2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5C12C9372928273E002005E2 /* MainViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				5C12C92C2926AF7F002005E2 /* MainModel.swift in Sources */,
 				5C12C92A2926AC3B002005E2 /* Constant.swift in Sources */,
 				5C12C93429281105002005E2 /* WeatherListCell.swift in Sources */,
+				5C12C9382928273E002005E2 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
