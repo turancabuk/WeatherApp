@@ -9,9 +9,10 @@ import UIKit
 
 class WeatherListCell: UITableViewCell {
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    @IBOutlet weak var cityNameLabel: UILabel!
+
+    func configure(_ vm: MainViewModel) {
         
-        
+        self.cityNameLabel.text = vm.weather.name
     }
 }

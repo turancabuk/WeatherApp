@@ -6,14 +6,21 @@
 //
 
 import Foundation
+import UIKit
 
-
-
-
-
-
-
-
+/*class MainListViewModel {
+    private var MainViewModels = [MainViewModel]()
+    
+    func addWeatherViewModel(_ vm: MainViewModel) {
+     MainViewModels.append(vm)
+     }
+     func numberOfRows(_ section: Int) -> Int {
+     return MainViewModels.count
+     }
+     func modelAt(_ index: Int) -> MainViewModel {
+     return MainViewModels[index]
+     }
+}*/
 
 
 class MainViewModel {
@@ -43,8 +50,6 @@ class MainViewModel {
     var weatherId: Int {
         return weather.id!
     }
-    
-    
-    
-    
+
 }
+

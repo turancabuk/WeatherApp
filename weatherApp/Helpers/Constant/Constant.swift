@@ -11,7 +11,7 @@ class WeatherByCity {
 
     static func urlForWeather(city: String) -> URL {
         var baseUrl: String {
-            "https://api.openweathermap.org/data/2.5/weather?q="
+            "https://api.openweathermap.org/data/2.5/weather?q=ankara"
         }
         var APIKey: Any {
             "&appid=c7e855dea4a4c52c2f1d97501e6be4fb"
@@ -20,7 +20,7 @@ class WeatherByCity {
         
   
         return URL(string:
-                    "\(baseUrl)\(city.escaped())\(APIKey)")!
+                    "\(baseUrl)\(APIKey)")!
         
         
     }
