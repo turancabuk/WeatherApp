@@ -14,5 +14,6 @@ class WeatherListCell: UITableViewCell {
     func configure(_ vm: MainViewModel) {
         
         self.cityNameLabel.text = vm.weather.name
+        
     }
 }

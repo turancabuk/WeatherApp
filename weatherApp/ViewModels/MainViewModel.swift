@@ -21,8 +21,27 @@ import UIKit
      return MainViewModels[index]
      }
 }*/
-
-
+final class MainViewModel {
+    private let webService: WeatherWebServiceAdapter
+    
+    var weatherList = [Welcome]()
+    
+    ini
+    
+    func getNews(complrtionHandler: @escaping () -> Void) {
+        webService.getNews { result in
+            switch result {
+            case .success(let response):
+                if let articles = response.articles {
+                    self.articleList = articles
+                }
+                complrtionHandler()
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+}
 class MainViewModel {
     let weather: Welcome
     

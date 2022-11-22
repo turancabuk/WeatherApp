@@ -7,21 +7,30 @@
 
 import Foundation
 
-class WeatherByCity {
-
-    static func urlForWeather(city: String) -> URL {
-        var baseUrl: String {
-            "https://api.openweathermap.org/data/2.5/weather?q=ankara"
+enum WeatherAPICall: String {
+    private var baseUrl: String {
+        "https://api.openweathermap.org/data/2.5/weather?q=ankara"
+    }
+    
+    private var apiKey: String {
+        "&appid=c7e855dea4a4c52c2f1d97501e6be4fb"
+    }
+    
+    
+    
+    case getWeather
+    
+    private var urlString: String {
+        switch self {
+        case .getWeather:
+            return "\(baseUrl)\(apiKey)"
         }
-        var APIKey: Any {
-            "&appid=c7e855dea4a4c52c2f1d97501e6be4fb"
+    }
+    
+    var url: URL {
+        switch self {
+        case .getWeather:
+            return URL(string: urlString)!
         }
-        
-        
-  
-        return URL(string:
-                    "\(baseUrl)\(APIKey)")!
-        
-        
     }
 }
