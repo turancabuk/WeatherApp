@@ -1,15 +1,15 @@
+////
+////  Extensions.swift
+////  weatherApp
+////
+////  Created by Turan Çabuk on 17.11.2022.
+////
+////  API CALL: api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={API key}
 //
-//  Extensions.swift
-//  weatherApp
+//import Foundation
 //
-//  Created by Turan Çabuk on 17.11.2022.
-//  
-//  API CALL: api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={API key}
-
-import Foundation
-
-extension String {
-    func escaped() -> String {
-        return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? self
-    }
-}
+//extension String {
+//    func escaped() -> String {
+//        return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? self
+//    }
+//}

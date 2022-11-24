@@ -73,9 +73,7 @@
 				5C12C9252926ABEF002005E2 /* Utility */,
 				5C12C9242926ABC9002005E2 /* ViewModels */,
 				5C12C9232926ABBC002005E2 /* Controllers */,
-				5C12C9222926ABAE002005E2 /* Webservice */,
 				5C12C9202926AB8F002005E2 /* Views */,
-				5C12C9212926AB98002005E2 /* Model */,
 			);
 			path = weatherApp;
 			sourceTree = "<group>";
@@ -87,22 +85,6 @@
 				5C12C9112926AB7D002005E2 /* Main.storyboard */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		5C12C9212926AB98002005E2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5C12C92B2926AF7F002005E2 /* MainModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		5C12C9222926ABAE002005E2 /* Webservice */ = {
-			isa = PBXGroup;
-			children = (
-				5C12C93529281316002005E2 /* Webservice.swift */,
-			);
-			path = Webservice;
 			sourceTree = "<group>";
 		};
 		5C12C9232926ABBC002005E2 /* Controllers */ = {
@@ -117,7 +99,9 @@
 		5C12C9242926ABC9002005E2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5C12C92B2926AF7F002005E2 /* MainModel.swift */,
 				5C12C9372928273E002005E2 /* MainViewModel.swift */,
+				5C12C93529281316002005E2 /* Webservice.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
