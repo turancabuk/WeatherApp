@@ -11,7 +11,7 @@ class WeatherListCell: UITableViewCell {
     
     @IBOutlet weak var cityNameLabel: UILabel!
 
-    func configure(_ vm: MainViewModel) {
+    func configure(_ vm: WeatherData) {
         
         self.cityNameLabel.text = vm.weather.name
         
