@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "weather.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },

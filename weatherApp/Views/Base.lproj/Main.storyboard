@@ -21,34 +21,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WeatherCell" rowHeight="77" id="o45-HI-77t" customClass="WeatherListCell" customModule="weatherApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="390" height="77"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WeatherCell" rowHeight="614" id="o45-HI-77t" customClass="WeatherListCell" customModule="weatherApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="614"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o45-HI-77t" id="Dm2-Hg-0DD">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="77"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="614"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="city name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlX-aL-fz0">
-                                                    <rect key="frame" x="20" y="11" width="350" height="47"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="350" id="VVy-pY-h8c"/>
-                                                        <constraint firstAttribute="height" constant="47" id="WGT-8k-gp0"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1D-Sl-nyt">
+                                                    <rect key="frame" x="140" y="41" width="110" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="DlX-aL-fz0" firstAttribute="top" secondItem="Dm2-Hg-0DD" secondAttribute="topMargin" id="by6-ae-Zgh"/>
-                                                <constraint firstItem="DlX-aL-fz0" firstAttribute="leading" secondItem="Dm2-Hg-0DD" secondAttribute="leadingMargin" id="dhu-Lf-JDn"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="DlX-aL-fz0" secondAttribute="bottom" constant="8" id="qsj-pe-oK3"/>
-                                                <constraint firstItem="DlX-aL-fz0" firstAttribute="trailing" secondItem="Dm2-Hg-0DD" secondAttribute="trailingMargin" id="tcd-8m-bcs"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="cityNameLabel" destination="DlX-aL-fz0" id="ITO-vs-fns"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
