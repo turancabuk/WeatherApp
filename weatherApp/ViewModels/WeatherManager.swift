@@ -7,13 +7,13 @@ import Foundation
 
 
 
-protocol WeatherManagerProtocol {
+protocol WeatherManagerDelegate {
     func updateWeather(_ WeatherManager: WeatherManager, weather: WeatherModel)
     func failError(error: Error)
 }
 struct WeatherManager {
     
-    var delegate: WeatherManagerProtocol?
+    var delegate: WeatherManagerDelegate?
     let APIUrl = "https://api.openweathermap.org/data/2.5/weather?appid=c7e855dea4a4c52c2f1d97501e6be4fb&units=metric"
     
     func weatherByTextField(cityName: String) {
@@ -53,7 +53,7 @@ struct WeatherManager {
             let cityName = decodedData.name
             let description = decodedData.weather[0].description
             
-            let weather = WeatherModel(countryName: countryName, cityName: cityName, description: description, conditionId: id, humidity: humidity, temperature: temp, minTemp: minTemp, maxTemp: maxTemp)
+           let weather = WeatherModel(countryName: countryName, cityName: cityName, description: description, conditionId: id, humidity: humidity, temperature: temp, minTemp: minTemp, maxTemp: maxTemp)
                 
                 return weather
                 
