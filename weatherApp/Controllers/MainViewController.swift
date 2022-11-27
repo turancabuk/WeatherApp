@@ -9,15 +9,16 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var countryName: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var searchTextfield: UITextField!
     @IBOutlet weak var minTemp: UILabel!
     @IBOutlet weak var maxTemp: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
+
     
     var weatherManager = WeatherManager()
     
@@ -29,27 +30,23 @@ class MainViewController: UIViewController {
         
     }
     
+    @IBAction func searchButton(_ sender: Any) {
+        if searchTextfield.text == "" {
+            alert(title: "ERROR", message: "enter a city")
+        }
+        searchTextfield.endEditing(true)    }
 }
 extension MainViewController: UITextFieldDelegate, WeatherManagerDelegate {
     func updateWeather(_ WeatherManager: WeatherManager, weather: WeatherModel) {
         DispatchQueue.main.async {
-            self.temperatureLabel.text = weather.temperatureString
-            self.conditionImageView.image = UIImage(contentsOfFile: weather.conditionName)
+            self.temperatureLabel.text = "\(weather.temperatureString)ºC"
+            self.conditionImageView.image = UIImage(named: weather.conditionName)
             self.cityLabel.text = weather.cityName
             self.countryName.text = weather.countryName
             self.minTemp.text = "\(weather.minTemp)ºC"
             self.maxTemp.text = "\(weather.maxTemp)ºC"
             self.humidityLabel.text = "\(weather.humidity)%"
         }
-    }
-    
-    
-    @IBAction func searchButton(_ sender: UIButton) {
-        
-        if searchTextfield.text == "" {
-            alert(title: "ERROR", message: "enter a city")
-        }
-        searchTextfield.endEditing(true)
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchTextfield.endEditing(true)
